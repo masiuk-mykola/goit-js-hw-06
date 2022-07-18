@@ -29,6 +29,7 @@ function createBoxes() {
   let divs = [];
   // Беру значення інпута
   let inputValue = inputRef.value;
+
   // Зробив цикл з лічильником
   for (let i = 1; i <= inputValue; i += 1) {
     // На кожнай ітерації додаю по 10px до ширини і висоти
@@ -49,4 +50,5 @@ function createBoxes() {
 
 function destroy() {
   boxesRef.innerHTML = '';
+  inputRef.value = '';
 }
